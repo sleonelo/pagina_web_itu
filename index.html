@@ -1,26 +1,386 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo.css">
-    <title>Pagina desafio programacion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilos.css">
+    <title>Portfolio Programación web ITU</title>
 </head>
 <body>
-    <h1 class="Titulo">Portfolio Personal</h1>
-    <nav><ul>
-        <li><a href="http://www.google.com" target="_blank">clickea para ir a google</a></li>
-        <li>algo</li>
-        <li>otra cosa</li>
-        <li>otra</li>
-        <li>algo mas</li>
-    </ul>
-    </nav>
-    <div class="foto"><img src="grizzlython.jpg"></div>
-    <h1> hola </h1>
-    <h1> hola </h1>
-    <h1> hola </h1>
-    <h1> hola </h1>
+
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">SILVIO</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MÍ</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CV</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    
+    <!-- Inicio -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/IMG-20210626-WA0080.jpg" alt="">
+            </div>
+            <h1>SILVIO OLMOS</h1>
+            <h2>Estudiante <a href="https://itu.uncuyo.edu.ar/" target="_blank">ITU</a> - Redes de datos y telecomunicaciones, orientacion a Data Scientist</h2>
+            <div class="redes">
+                <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://github.com/sleonelo" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/silvio-leonel-olmos-8b50211b9/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Silvio Leonel Olmos. </span> En  el transcurso de mi vida siempre me interese por las telecomunicaciones y la tecnología. Por eso, estoy haciendo la Tecnicatura Universitaria en Redes de datos y Telecomunicaciones en el ITU</a></p>
+
+            <hr>
+
+            <div class="fila">
+                
+                <div class="columna">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños -> </strong>
+                            27 de Septiembre
+                        </li>
+                        <li>
+                            <strong>Teléfono -> </strong>
+                            +54 261 3398467 
+                        </li>
+                        <li>
+                            <strong>Email -> </strong>
+                            olmoscarrizosilvioleonel@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección -> </strong>
+                            Godoy Cruz, Mendoza (Argentina)
+                        </li>
+                    </ul>
+                </div>
+                <div class="columna">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>Juegos</span>
+                        </div>    
+
+                        <div class="interes">
+                                <i class="fa-sharp fa-solid fa-headphones"></i>
+                                <span>Música</span>
+                        </div>
+
+                        <div class="interes">
+                                <i class="fa-solid fa-plane"></i>
+                                <span>Viajes</span>
+                        </div>
+
+                        <div class="interes">
+                                <i class="fa-solid fa-book"></i>
+                                <span>Investigación</span>
+                        </div>
+
+                        <div class="interes">
+                                <i class="fa-solid fa-basketball"></i>
+                                <span>Deportes</span>
+                                
+                        </div>
+
+                        <div class="interes">
+                            <i class="fa-solid fa-robot"></i>
+                                <span>Domótica</span>
+                        </div>
+
+                        <div class="interes">
+                            <i class="fa-solid fa-children"></i>
+                                <span>Familia</span>
+                        </div>
+                        
+                        <div class="interes">
+                            <i class="fa-solid fa-clapperboard"></i>
+                                <span>Edición</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                <a href="Silvio olmos.pdf" download="CV">
+                    Descargar CV <i class="fa-solid fa-download"></i>
+               </a>
+               <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="skills" class="skills">
+        <div class="contenido-seccion">
+            <h2>SKILLS</h2>
+            <div class="fila">
+
+                <!-- SKILLS TÉCNICAS -->
+                <div class="columna">
+                    <h3>Habilidades Técnicas</h3>
+                    
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>30%</span>
+                            </div>        
+                        </div>
+                    </div>
+
+
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>30%</span>
+                            </div>        
+                        </div>
+                    </div>
+
+
+                    <div class="skill">
+                        <span>PHOTOSHOP</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>30%</span>
+                            </div>        
+                        </div>
+                    </div>
+
+
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>45%</span>
+                            </div>        
+                        </div>
+                    </div>
+
+
+                    <div class="skill">
+                        <span>JAVA</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>30%</span>
+                            </div>        
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <!-- SKILLS PROFESIONALES -->
+                <div class="columna">
+                    <h3>Habilidades Profesionales</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>72%</span>
+                            </div>        
+                        </div>
+                    </div>
+
+
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>96%</span>
+                            </div>        
+                        </div>
+                    </div>
+
+
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>        
+                        </div>
+                    </div>
+
+
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>        
+                        </div>
+                    </div>
+
+
+                    <div class="skill">
+                        <span>Liderazgo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>        
+                        </div>
+                    </div>
+
+                </div>
+            
+            </div>
+        </div>
+    </section>
+
+    <!-- Currículum -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Currículum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Programación</h4>
+                        <span class="casa">Intituto Tecnológico Universitario</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>Dentro de la curricula de la carrera de Técnico en redes de datos y tele comunicaciones tuvimos formación en el lenguaje de programación Python, un pantallazo general de este lenguaje que luego profundice de manera autodidacta.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Seguridad Electrónica</h4>
+                        <span class="casa">autodidacta </span>
+                        <span class="fecha">en constante desarrollo</span>
+                        <p>Edicion de videos en multiples formatos, construccion y mantenimiento de servidores ingestores de video en protocolo RTMP - RTSP haciendo uso de NGINX, especializado en sistemas de vigilancia electronicos, cctv con tecnología de IA para eliminar falsas detecciones, procesamiento y mejoramiento de las imagenes adquiridas.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Piloto de aeronaves no tripuladas</h4>
+                        <span class="casa">Drones-Vip</span>
+                        <span class="fecha">2022</span>
+                        <p>Ejecución de tareas destinadas al estudio del terreno a traves de las imagenes obtenidas por el dispositivo, utilizando la técnica de ortomosaico, vuelos automatizados por coordenadas en 3 dimensiones, con la finalidad de contribuir a las tareas de busqueda y salvamento de personas</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia Laboral</h3>
+                    <div class="item der">
+                        <h4>Comunicaciones</h4>
+                        <span class="casa">EANA S.E.</span>
+                        <span class="fecha">2018 - actualidad</span>
+                        <p>Encargado del área de comunicaciones del servicio de búsqueda y salvamento de la región de cuyo, mantenimiento y configuración equipos de telecomunicaciones, armado de planes de comunicaciones para búsqueda y rescate de personas. Uso de sistemas informáticos de avanzada. Planificación de patrones de busqueda para aeronaves.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Comunicaciones</h4>
+                        <span class="casa">Fuerza Aérea Argentina</span>
+                        <span class="fecha">2009 - 2018</span>
+                        <p>Mantenimiento de las redes telefónicas, mantenimiento de equipos de comunicaciones fijos y móviles, mantenimiento de central telefónica, mantenimiento de redes y sistemas CCTV, instalación de redes y cableado estructural, instalación de radioenlaces satelitales.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Ahora el Formulario xd -->
+                <div class="columna">
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Nº de Teléfono">
+                    <input type="text" placeholder="Correo electrónico">
+                    <input type="text" placeholder="Tema a tratar">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>Enviar Mensaje <i class="fa-solid fa-share-from-square"></i><span class="overlay"></span></button>
+                </div>
+                <!-- Dirección de casita xd -->
+                <div class="columna">
+                    <img src="img/ubicación.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Trescasas, Segovia(España)
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-phone-volume"></i>
+                                Llámame: 682468220
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: hugoarribasmunoz2019@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <?php 
+	$nombre = $_POST['nombre'];
+	$email = $_POST['email'];
+	$asunto = 'Formulario Rellenado';
+	$mensaje = "Nombre: ".$nombre."<br> Email: $email<br> Mensaje:".$_POST['mensaje'];
+
+
+	if(mail('tuEmail', $asunto, $mensaje)){
+		echo "Correo enviado";
+	}
+    ?>
+
+    <!-- FOOTER -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+
+        <div class="redes">
+            <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://github.com/sleonelo" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/silvio-leonel-olmos-8b50211b9/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
